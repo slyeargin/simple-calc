@@ -2,10 +2,17 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Client Template
+    title A Simple Calculator
     link(rel='stylesheet', href='/css/app.css')
   body
-    h1 Client Template
+    h1 A Simple Calculator
+    h2 The simplest calculator in all the land.
+
+    input#num1(type='text')
+    button#btn +
+    input#num2(type='text')
+    span =
+    span#sum
 
     script(src='/js/vendor/jquery-2.1.0.js')
     script(src='/js/source/main.js')
