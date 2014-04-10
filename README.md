@@ -1,10 +1,3 @@
-# client-template
+# Simple Calculator
 
-Serves as a template for client JavaScript applications.
-
-It uses:
-* Jade
-* Less
-* Grunt
-* JSHint
-* Node.js
+A simple calculator.
