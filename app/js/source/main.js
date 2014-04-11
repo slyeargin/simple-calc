@@ -52,9 +52,14 @@
 
   function factorial() {
     var values = getNumbers();
-    var fact = values[0];
-    for(var i = 1; i <= fact; i++){
-    fact *= i;
+    var fact;
+    findFactorial(values[0]);
+    function findFactorial(x) {
+      if (x===0){
+        return 1;
+      }
+      fact = x * factorial(x-1);
+      return fact;
     }
     display(fact);
   }
@@ -66,8 +71,8 @@
   }
 
   function display(answer){
-  $('#answer').text(answer);
-  }
+      $('#answer').text(answer);
+    }
 
 
 })();
