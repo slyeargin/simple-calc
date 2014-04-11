@@ -6,10 +6,10 @@ html(lang='en')
     link(rel='stylesheet', href='/css/app.css')
   body
     h1 A Simple Calculator
-    h2 The simplest calculator in all the land.
+    h2 The simplest calculator in all the land, yo.
 
     input#num1(type='text')
-    span ?
+    span#item2 ?
     input#num2(type='text')
     span =
     span#answer
@@ -18,8 +18,13 @@ html(lang='en')
 
     button#btnAdd +
     button#btnSub -
-    button#btnMul *
-    button#btnDiv /
+    button#btnMul ⨯
+    button#btnDiv ÷
+    button#btnExp x ^ y
+
+    button#btnSqrt √
+    // button#btnFact !
+
 
     script(src='/js/vendor/jquery-2.1.0.js')
     script(src='/js/source/main.js')
