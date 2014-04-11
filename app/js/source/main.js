@@ -51,16 +51,10 @@
   }
 
   function factorial() {
-    var values = getNumbers();
-    var fact;
-    findFactorial(values[0]);
-    function findFactorial(x) {
-      if (x===0){
-        fact = 1;
-        return fact;
-      }
-      fact = x * factorial(x-1);
-      return fact;
+    var value = $('#num1').val() * 1;
+    var fact = 1;
+    for (var i = 1; i <= value; i++){
+      fact *= i;
     }
     display(fact);
   }
