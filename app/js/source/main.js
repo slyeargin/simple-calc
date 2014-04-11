@@ -56,7 +56,8 @@
     findFactorial(values[0]);
     function findFactorial(x) {
       if (x===0){
-        return 1;
+        fact = 1;
+        return fact;
       }
       fact = x * factorial(x-1);
       return fact;
